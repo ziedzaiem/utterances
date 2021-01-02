@@ -1,3 +1,11 @@
+# About this fork
+
+A french 🇫🇷 translated fork of [utterance](https://github.com/utterance/utterances). demo : https://www.ziedzaiem.com/utterances-commentaires-open-source/
+
+Uses a Cloudflare hosted Worker for [utterances-oauth](https://github.com/utterance/utterances-oauth). See docs on :
+- https://weixuanz.github.io/posts/2020/07/28/selfhost-utterances/
+- https://github.com/utterance/Utterances/issues/42
+
 # utterances 🔮
 
 A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!

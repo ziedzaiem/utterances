@@ -5,12 +5,12 @@ import { getReactionsMenuHtml, getReactionHtml, getSignInToReactMenuHtml } from 
 
 const avatarArgs = '?v=3&s=88';
 const displayAssociations: Record<CommentAuthorAssociation, string> = {
-  COLLABORATOR: 'Collaborator',
-  CONTRIBUTOR: 'Contributor',
-  MEMBER: 'Member',
-  OWNER: 'Owner',
-  FIRST_TIME_CONTRIBUTOR: 'First time contributor',
-  FIRST_TIMER: 'First timer',
+  COLLABORATOR: 'Collaborateur',
+  CONTRIBUTOR: 'Contributeur',
+  MEMBER: 'Membre',
+  OWNER: 'Propriétaire',
+  FIRST_TIME_CONTRIBUTOR: 'Contribue pour la première fois',
+  FIRST_TIMER: 'Première fois',
   NONE: ''
 };
 
@@ -50,8 +50,7 @@ export class CommentComponent {
         <header class="comment-header">
           <span class="comment-meta">
             <a class="text-link" href="${user.html_url}" target="_blank"><strong>${user.login}</strong></a>
-            commented
-            <a class="text-link" href="${html_url}" target="_blank">${timeAgo(Date.now(), new Date(created_at))}</a>
+            a commenté le <a class="text-link" href="${html_url}" target="_blank">${(new Date(created_at)).toLocaleString()}</a>
           </span>
           <div class="comment-actions">
             ${association ? `<span class="author-association-badge">${association}</span>` : ''}

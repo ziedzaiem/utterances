@@ -4,14 +4,14 @@ import { pageAttributes } from './page-attributes';
 import { scheduleMeasure } from './measure';
 
 export const reactionNames: Record<ReactionID, string> = {
-  '+1': 'Thumbs Up',
-  '-1': 'Thumbs Down',
-  'laugh': 'Laugh',
-  'hooray': 'Hooray',
-  'confused': 'Confused',
-  'heart': 'Heart',
-  'rocket': 'Rocket',
-  'eyes': 'Eyes'
+  '+1': 'Pouces vers le haut',
+  '-1': 'Pouces vers le bas',
+  'laugh': 'Rire',
+  'hooray': 'Hourra',
+  'confused': 'Confus',
+  'heart': 'Cœur',
+  'rocket': 'Fusée',
+  'eyes': 'Yeux'
 };
 
 export const reactionEmoji: Record<ReactionID, string> = {
@@ -86,7 +86,7 @@ export function getReactionsMenuHtml(url: string, align: 'center' | 'right') {
     <summary ${align === 'center' ? 'tabindex="-1"' : ''}>${addReactionSvgs}</summary>
     <div class="Popover" style="${position}">
       <form class="Popover-message ${alignmentClass} box-shadow-large" action="javascript:">
-        <span class="reaction-name">Pick your reaction</span>
+        <span class="reaction-name">Choisissez une réaction</span>
         <div class="BtnGroup">
           ${reactionTypes.slice(0, 4).map(getButtonAndSpan).join('')}
         </div>

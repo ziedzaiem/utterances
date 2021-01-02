@@ -19,7 +19,9 @@ export class TimelineComponent {
       <h1 class="timeline-header">
         <a class="text-link" target="_blank"></a>
         <em>
-          - powered by
+          - fournis par 
+          <a class="text-link" href="https://github.com/ziedzaiem/utterances" target="_blank">ziedzaiem/utterances</a>
+           fork de 
           <a class="text-link" href="https://utteranc.es" target="_blank">utteranc.es</a>
         </em>
       </h1>`;
@@ -107,6 +109,6 @@ export class TimelineComponent {
   }
 
   private renderCount() {
-    this.countAnchor.textContent = `${this.count} Comment${this.count === 1 ? '' : 's'}`;
+    this.countAnchor.textContent = `${this.count} Commentaire${this.count === 1 ? '' : 's'}`;
   }
 }
