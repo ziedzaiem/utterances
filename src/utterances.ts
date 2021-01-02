@@ -81,11 +81,11 @@ addEventListener('not-installed', function handleNotInstalled() {
   removeEventListener('not-installed', handleNotInstalled);
   document.querySelector('.timeline')!.insertAdjacentHTML('afterbegin', `
   <div class="flash flash-error">
-    Error: utterances is not installed on <code>${page.owner}/${page.repo}</code>.
-    If you own this repo,
-    <a href="https://github.com/apps/utterances" target="_top"><strong>install the app</strong></a>.
-    Read more about this change in
-    <a href="https://github.com/utterance/utterances/pull/25" target="_top">the PR</a>.
+    Erreur: utterances n'est pas installé sur <code>${page.owner}/${page.repo}</code>.
+    Si ce répo vous appartient,
+    <a href="https://github.com/apps/utterances-sur-ziedzaiem-com" target="_top"><strong>Installer l'app</strong></a>.
+    Lire plus dans 
+    <a href="https://github.com/utterance/utterances/pull/25" target="_top">ce PR</a>.
   </div>`);
   scheduleMeasure();
 });

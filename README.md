@@ -6,6 +6,7 @@ Uses a Cloudflare hosted Worker for [utterances-oauth](https://github.com/uttera
 - https://weixuanz.github.io/posts/2020/07/28/selfhost-utterances/
 - https://github.com/utterance/Utterances/issues/42
 
+Uses a different Github App [utterances sur ziedzaiem.com](https://github.com/apps/utterances-sur-ziedzaiem-com).
 # utterances 🔮
 
 A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
